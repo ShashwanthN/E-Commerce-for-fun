@@ -1,5 +1,5 @@
-import iphone from "./assets/img.jpg";
-import samsung from "./assets/samsung.jpg";
+import iphone from "../assets/img.jpg";
+import samsung from "../assets/samsung.jpg";
 
 const listItems = [
   {
@@ -11,11 +11,10 @@ const listItems = [
       battery: "5000 MaH",
       ram: "12GB Memory | 256GB / 512GB / 1TB Storage",
     },
-    Price:{
-        Offer: "1,09,000",
-        Original: "1,20,000",
-        
-    }
+    Price: {
+      Offer: "1,09,000",
+      Original: "1,20,000",
+    },
   },
   {
     brandname: "Apple iPhone 14 (Starlight, 128 GB)",
@@ -26,10 +25,10 @@ const listItems = [
       battery: "4000 MaH",
       ram: "6GB Memory | 128GB / 256GB / 512GB Storage",
     },
-    Price:{
-        Offer: "79,000",
-        Original: "89,000"
-    }
+    Price: {
+      Offer: "79,000",
+      Original: "89,000",
+    },
   },
   {
     brandname: "Redmi Note 13 Pro 5G (Green, 12GB, 256GB Storage)",
@@ -39,11 +38,10 @@ const listItems = [
       battery: "5000 MaH",
       ram: "12GB Memory | 256GB / 512GB / 1TB Storage",
     },
-    Price:{
-        Offer: "17,999",
-        Original: "20,999",
-        
-    }
+    Price: {
+      Offer: "17,999",
+      Original: "20,999",
+    },
   },
   {
     brandname: "Apple iPhone 12 Pro Max (Gold, 256 GB)",
@@ -53,10 +51,10 @@ const listItems = [
       battery: "4000 MaH",
       ram: "8GB Memory | 256GB / 512GB / 1TB Storage",
     },
-    Price:{
-        Offer: "1,09,000",
-        Original: "1,20,000"
-    }
+    Price: {
+      Offer: "1,09,000",
+      Original: "1,20,000",
+    },
   },
   {
     brandname: "Realme 10 pro (Ocean Blue, 12GB, 256GB Storage)",
@@ -66,10 +64,10 @@ const listItems = [
       battery: "5000 MaH",
       ram: "8GB Memory | 256GB / 512GB Storage",
     },
-    Price:{
-        Offer: "19,999",
-        Original: "23,999"
-    }
+    Price: {
+      Offer: "19,999",
+      Original: "23,999",
+    },
   },
   {
     brandname: "Oneplus 10R (White, 12GB, 256GB Storage)",
@@ -79,10 +77,10 @@ const listItems = [
       battery: "5000 MaH",
       ram: "12GB Memory | 256GB / 512GB / 1TB Storage",
     },
-    Price:{
-        Offer: "49,999",
-        Original: "59,999"
-    }
+    Price: {
+      Offer: "49,999",
+      Original: "59,999",
+    },
   },
 ];
 export default listItems;
