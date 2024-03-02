@@ -46,7 +46,7 @@ export function Voting({
   ).toFixed(0);
 
   return (
-    <div className="cursor-pointer">
+    <div className="cursor-pointer md:w-full">
       <div className="flex pl-4 pr-4 text-2xl max:h-[200px]  justify-between items-center pb-4 pt-4">
         <div className="flex justify-between items-center">
           <div className="w-[150px]">

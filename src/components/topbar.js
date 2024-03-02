@@ -1,6 +1,7 @@
 import React from "react";
 import { RiShoppingBag3Line } from "react-icons/ri";
-import { AiFillLike, AiOutlineSearch } from "react-icons/ai";
+import { AiFillHome, AiFillLike, AiOutlineSearch } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Topbar = () => {
   return (
@@ -16,10 +17,12 @@ const Topbar = () => {
           id="search box"
           placeholder="Search products..."
         ></input>
-        <AiOutlineSearch
-          className=" cursor-pointer hover:text-orange pl-2 h-full rounded-r-full"
-          size={35}
-        />
+        <Link to="/search">
+          <AiOutlineSearch
+            className=" cursor-pointer hover:text-orange pl-2 h-full rounded-r-full"
+            size={35}
+          />
+        </Link>
       </form>
 
       <div className="flex gap-10 text-white justify-between pr-6">
@@ -28,6 +31,12 @@ const Topbar = () => {
           className="hover:text-orange cursor-pointer"
           size={24}
         />
+        <Link
+          to="/Home"
+          className="text-ascent-1 text-md bolit ml-2 cursor-pointer"
+        >
+          <AiFillHome className="hover:text-orange cursor-pointer" size={24} />
+        </Link>
       </div>
     </div>
   );
