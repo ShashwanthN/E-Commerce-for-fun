@@ -10,15 +10,13 @@ const App = () => {
    
   return (
     <div>
-      <div>
+      <div className="top-0 sticky">
         <Topbar/>
         </div>
         <Routes>
         <Route path='/Home' element={<Home />} />
         <Route path='/search' element={<ProductSearchListing />} />
         </Routes>
-      
-
     </div>
   );
 };

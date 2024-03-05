@@ -1,5 +1,5 @@
-import iphone from "../assets/img.jpg";
-import samsung from "../assets/samsung.jpg";
+import iphone from "../assets/img.png";
+import samsung from "../assets/samsung.png";
 
 const listItems = [
   {

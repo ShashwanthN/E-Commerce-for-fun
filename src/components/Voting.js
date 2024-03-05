@@ -46,23 +46,23 @@ export function Voting({
   ).toFixed(0);
 
   return (
-    <div className="cursor-pointer md:w-full">
+    <div className="cursor-pointer hover:scale-95 transition-all z-0 duration-500 bg-bgSecondary rounded-xl border border-divider mb-2 md:w-full">
       <div className="flex pl-4 pr-4 text-2xl max:h-[200px]  justify-between items-center pb-4 pt-4">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between  items-center">
           <div className="w-[150px]">
             <img
-              className=" h-full marginCenter"
+              className=" hover:scale-125 transition-all duration-500 cursor-pointer h-full  shadow-white marginCenter"
               src={image}
               alt="iPhone"
             ></img>
           </div>
           <div className="pl-10">
-            <h1>{brandname}</h1>
-            <div className="text-lg text-gray">Manufacturer: {model}</div>
-            <p className="text-sm text-gray">Specs: {specs}</p>
-            <p className="text-sm text-gray">{battery}</p>
-            <p className="text-sm text-gray">{ram}</p>
-            <div className="flex-row pt-2 divide-x divide-gray-light flex">
+            <h1 className="font-">{brandname}</h1>
+            <div className="text-lg font-regular text-textSecondary">Manufacturer: {model}</div>
+            <p className="text-sm font-regular text-textSecondary">Specs: {specs}</p>
+            <p className="text-sm font-regular text-textSecondary">{battery}</p>
+            <p className="text-sm font-regular text-textSecondary">{ram}</p>
+            <div className="flex-row pt-2 divide-x divide-divider flex">
               <div className="flex pb-2 pr-2 hover:text-orange focus:text-orange">
                 <button onClick={handleLikeClick}>
                   {liked ? (
@@ -86,12 +86,12 @@ export function Voting({
         </div>
         <div className="flex">
           <div className="flex flex-col ">
-            <div className="bg-green text-sm w-[70px] p-1 rounded-full flex items-center justify-center font-medium">
+            <div className="bg-green text-bgPrimary text-sm w-2/3 p-1 rounded-full flex items-center justify-center font-bold">
               <div>upto {percent}%</div>
             </div>
 
             <div className="text-4xl">₹{PriceOffer}</div>
-            <div className="text-lg line-through">₹{PriceOriginal}</div>
+            <div className="text-lg text-textSecondary line-through">₹{PriceOriginal}</div>
           </div>
         </div>
       </div>

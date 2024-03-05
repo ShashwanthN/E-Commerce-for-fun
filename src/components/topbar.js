@@ -1,19 +1,24 @@
 import React from "react";
 import { RiShoppingBag3Line } from "react-icons/ri";
-import { AiFillHome, AiFillLike, AiOutlineSearch } from "react-icons/ai";
+import {  AiFillLike, AiOutlineSearch } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const Topbar = () => {
   return (
-    <div className="sticky top-0 h-[60px] text-gray-light pl-3 p-2 transition-all ease-in bg-gray-dark  flex items-center justify-between">
-      <div className="text-3xl  cursor-pointer text-white font-bold">
-        <span className="italic">Ship</span>Kart.
-        <span className="text-lg text-gray">in</span>
+    <div className="h-[60px]  border-b border-divider  text-textPrimary pl-3 p-2 transition-all ease-in bg-bgPrimary  flex items-center justify-between">
+      <div className="flex w-full items-center">
+        <div className="text-3xl cursor-pointer text-textPrimary font-bold">
+        <Link to="/Home" className="hover:text-orange">
+          {/* <AiFillHome className="hover:text-orange cursor-pointer" size={24} /> */}
+          <span className="italic">IMC</span>orp.
+          <span className="text-lg text-textSecondary">in</span>
+        </Link>
+        </div>
       </div>
-      <form className="w-4/6 border-2 border-gray flex justify-between bg-grey2 pr-2 items-center hover:bg-[#374151] hover:border-orange h-full rounded-full">
+      <form className="border-2 shadow-textPrimary opacity-30  border-borderCol w-full flex  justify-between bg-bgTertiary pr-2 items-center  hover:opacity-70 h-full rounded-md">
         <input
           type="text"
-          className="w-full h-full bg-grey2 hover:border-orange hover:bg-[#374151] rounded-l-full pl-3 text-gray-light focus:border-orange"
+          className="w-full h-full bg-bgTertiary focus:outline-none rounded-l-md pl-3 flex open:border-none active:border-none text-textPrimary"
           id="search box"
           placeholder="Search products..."
         ></input>
@@ -24,19 +29,13 @@ const Topbar = () => {
           />
         </Link>
       </form>
-
-      <div className="flex gap-10 text-white justify-between pr-6">
-        <AiFillLike className="hover:text-orange cursor-pointer" size={24} />
+      <div className="flex text-textSecondary w-full items-center justify-evenly pr-6">
+        <div className="flex hover:text-textPrimary cursor-pointer items-center"><AiFillLike className=" p-1 flex cursor-pointer" size={30} ></AiFillLike>Liked
+        </div>
         <RiShoppingBag3Line
-          className="hover:text-orange cursor-pointer"
-          size={24}
+          className="hover:text-textPrimary flex cursor-pointer"
+          size={30}
         />
-        <Link
-          to="/Home"
-          className="text-ascent-1 text-md bolit ml-2 cursor-pointer"
-        >
-          <AiFillHome className="hover:text-orange cursor-pointer" size={24} />
-        </Link>
       </div>
     </div>
   );
