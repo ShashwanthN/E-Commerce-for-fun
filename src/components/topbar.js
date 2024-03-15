@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 
 const Topbar = () => {
   return (
-    <div className="h-[60px]  border-b border-divider  text-textPrimary pl-3 p-2 transition-all ease-in bg-bgPrimary  flex items-center justify-between">
+    <div className="h-[60px] z-40 border-b border-divider bg-bgPrimary sticky top-0 w-full flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06]  supports-backdrop-blur:bg-white/95 dark:bg-slate-900/75 text-textPrimary pl-3 p-2 ease-in   flex items-center justify-between">
       <div className="flex w-full items-center">
         <div className="text-3xl cursor-pointer text-textPrimary font-bold">
         <Link to="/Home" className="hover:text-orange">
           {/* <AiFillHome className="hover:text-orange cursor-pointer" size={24} /> */}
-          <span className="italic">IMC</span>orp.
+          <span className="italic font-black">I M C</span>.
           <span className="text-lg text-textSecondary">in</span>
         </Link>
         </div>
